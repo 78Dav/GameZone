@@ -1,20 +1,75 @@
+/* Se quitan todos los valores por defecto */
 *{
     margin: 0;
     padding: 0;
     border: none;
     box-sizing: border-box;
 }
-body{
-    background-color: #9400FF;
+/* Se quitan todos los valores por defecto */
+
+/* Se crean variables para la paleta de colores */
+html{
+    --primero:  #793FDF;
+    --segundo: #97FFF4;
+    --tercero: #7091F5;
+    --cuarto: #FFFD8C;
 }
+/* Se crean variables para la paleta de colores */
+
+/* Se pinta el body */
+body{
+    background-color: var(--primero);
+}
+/* Se pinta el body */
+
+/* Style div video Description  */
+#divDesc{
+    border: 3px solid var(--segundo);
+    border-radius: 1.5rem;
+    cursor: pointer;
+    color:var(--segundo);
+}
+/* div video Description  */
+
+/* Hover div video Description  */
+#divDesc:hover{
+    background-color: transparent;
+    box-shadow: 10px 10px 66px 0px var(--cuarto);
+    border: 3px solid var(--cuarto);
+    border-radius: 1.5rem;
+    cursor: pointer;
+    color: var(--cuarto);
+}
+/* Hover div video Description  */
+
+/* Style video Destacado */
+.vidDestac{
+    width: 100%;
+    border: 3px solid var(--segundo);
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+/* Style video Destacado */
+
+/* Style video Destacado */
+.vidDestac:hover{
+    box-shadow: 10px 10px 66px 0px var(--cuarto);
+    border: 3px solid var(--cuarto);
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+/* Style video Destacado */
+
 /* Style h1 Slader  */
 .h1Slide{
-    font-weight: 700;
+    color: var(--segundo);
+    font-weight: 600;
 }
 /* Style h1 Slader  */
 
 /* Style Span Categorías */
 .categories{
+    color: var(--segundo);
     font-weight: 800;
 }
 /* Style Span Categorías */
@@ -22,17 +77,32 @@ body{
 /* Style imgSliders */
 .imgSlider{
     width: 50%;
+    cursor: pointer;
 }
 /* Style imgSliders */
 
-/* Style video Destacado */
-.vidDestac{
-    border: 3px solid #bfcc04cc;
-    border-radius: 1.5rem;
-}
-/* Style video Destacado */
-
-#contSlider{
-    width: 10%;
+/* Style imgSliders hover */
+.imgSlider:hover{
+    box-shadow: 10px 10px 66px 0px var(--cuarto);
+    width: 55%;
+    cursor: pointer;
 }
 
+
+
+@media (max-width: 576px){
+    #divDesc{
+       width: 95%;
+       margin: 0.2rem;
+    }
+    .vidDestac{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #div3{
+        width: 100%;
+    }
+}

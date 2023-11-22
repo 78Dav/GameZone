@@ -7,15 +7,32 @@
 body{
     background-color: #9400FF;
 }
-
-imgSlider{
-    width: 50%;
-    height: 50%;
+/* Style h1 Slader  */
+.h1Slide{
+    font-weight: 700;
 }
+/* Style h1 Slader  */
+
+/* Style Span Categorías */
+.categories{
+    font-weight: 800;
+}
+/* Style Span Categorías */
+
+/* Style imgSliders */
+.imgSlider{
+    width: 50%;
+}
+/* Style imgSliders */
+
+/* Style video Destacado */
 .vidDestac{
     border: 3px solid #bfcc04cc;
     border-radius: 1.5rem;
 }
+/* Style video Destacado */
 
-
+#contSlider{
+    width: 10%;
+}
 

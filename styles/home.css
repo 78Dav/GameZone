@@ -24,10 +24,10 @@ body{
 
 /* Style div video Description  */
 #divDesc{
-    border: 3px solid var(--segundo);
+    border: 3px solid var(--cuarto);
     border-radius: 1.5rem;
     cursor: pointer;
-    color:var(--segundo);
+    color:var(--cuarto);
 }
 /* div video Description  */
 
@@ -38,14 +38,38 @@ body{
     border: 3px solid var(--cuarto);
     border-radius: 1.5rem;
     cursor: pointer;
-    color: var(--cuarto);
 }
 /* Hover div video Description  */
+
+/* Style Buy Button */
+.btn{
+    background-color: transparent;
+    border: 3px solid var(--cuarto);
+    color: var(--cuarto);
+    border-radius: 1.5rem;
+}
+/* Style Buy Button */
+
+/* Style Buy Button hover*/
+.btn:hover{
+    background-color: var(--cuarto);
+    border: 3px solid var(--cuarto); 
+    box-shadow: 10px 10px 66px 0px var(--cuarto);
+    border-radius: 1.5rem;
+    font-weight: 800;
+}
+/* Style Buy Button hover*/
+
+#esdlaLogo{
+    
+    filter: drop-shadow(5px 5px 17px #FFFD8C);
+    
+}
 
 /* Style video Destacado */
 .vidDestac{
     width: 100%;
-    border: 3px solid var(--segundo);
+    border: 3px solid var(--cuarto);
     border-radius: 1.5rem;
     cursor: pointer;
 }
@@ -84,13 +108,28 @@ body{
 /* Style imgSliders hover */
 .imgSlider:hover{
     box-shadow: 10px 10px 66px 0px var(--cuarto);
-    width: 55%;
     cursor: pointer;
 }
+/* Style imgSliders hover */
+
+/* Style more Recomends */
+.moreRecomends{
+    color: var(--segundo);
+    
+}
+/* Style more Recomends */
+
+
+/* .d-block{
+    width: 75%;
+    height: 50%;
+} */
 
 
 
-@media (max-width: 576px){
+
+
+/* @media (max-width: 576px){
     #divDesc{
        width: 95%;
        margin: 0.2rem;
@@ -105,4 +144,4 @@ body{
     #div3{
         width: 100%;
     }
-}
+} */

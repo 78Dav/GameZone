@@ -18,10 +18,12 @@ html{
 
 /* Se pinta el body */
 body{
-    background-color: var(--primero);
+    background-color: #15011f;
+
 }
 /* Se pinta el body */
 
+/* ------------------------star recommended video section------------------------- */
 /* Style div video Description  */
 #divDesc{
     border: 3px solid var(--cuarto);
@@ -60,88 +62,70 @@ body{
 }
 /* Style Buy Button hover*/
 
+/* style video recommended logo */
 #esdlaLogo{
     
     filter: drop-shadow(5px 5px 17px #FFFD8C);
-    
 }
+/* style video recommended logo */
 
-/* Style video Destacado */
+/* Style recommended video */
 .vidDestac{
     width: 100%;
     border: 3px solid var(--cuarto);
     border-radius: 1.5rem;
     cursor: pointer;
 }
-/* Style video Destacado */
+/* Style recommended video */
 
-/* Style video Destacado */
+/* Style recommended video hover */
 .vidDestac:hover{
     box-shadow: 10px 10px 66px 0px var(--cuarto);
     border: 3px solid var(--cuarto);
     border-radius: 1.5rem;
     cursor: pointer;
 }
-/* Style video Destacado */
+/* Style recommended video hover */
+/* ----------------------------end recommended video section----------------------------- */
 
-/* Style h1 Slader  */
-.h1Slide{
-    color: var(--segundo);
-    font-weight: 600;
-}
-/* Style h1 Slader  */
-
-/* Style Span Categorías */
-.categories{
-    color: var(--segundo);
-    font-weight: 800;
-}
-/* Style Span Categorías */
-
-/* Style imgSliders */
-.imgSlider{
-    width: 50%;
-    cursor: pointer;
-}
-/* Style imgSliders */
-
-/* Style imgSliders hover */
-.imgSlider:hover{
-    box-shadow: 10px 10px 66px 0px var(--cuarto);
-    cursor: pointer;
-}
-/* Style imgSliders hover */
-
-/* Style more Recomends */
 .moreRecomends{
-    color: var(--segundo);
+    color:var(--cuarto)
     
 }
-/* Style more Recomends */
+
+/* ----------------------------Star categories section----------------------------------- */
+/* Style img categories section */
+.imgSlider{
+    width: 20%;
+}
+/* Style img categories section */
+
+/* style h1 categories section */
+.h1categories{
+    color:black
+}
+/* style h1 categories section */
+/* style h1 categories section hover*/
+.h1categories:hover{
+    color:var(--cuarto)
+}
+/* style h1 categories section hover*/
 
 
-/* .d-block{
-    width: 75%;
-    height: 50%;
-} */
+#contCategories{
+    padding: 0.3rem;
+    filter: drop-shadow(5px 5px 17px #7091F5);
+    background-color: var(--tercero);
+}
+#contCategories:hover{
+    
+    
+}
+
+/* style h3 Slide categories section */
+.h3Slide{
+    color: var(--cuarto);
+}
 
 
-
-
-
-/* @media (max-width: 576px){
-    #divDesc{
-       width: 95%;
-       margin: 0.2rem;
-    }
-    .vidDestac{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    #div3{
-        width: 100%;
-    }
-} */
+/* style h3 Slide categories section */

@@ -23,34 +23,106 @@ body{
 }
 /* Se pinta el body */
 
-/* ------------------------star recommended video section------------------------- */
-
+/* ------------------------star categories video section------------------------- */
 .h3Title{
     filter: drop-shadow(5px 5px 17px #FFFD8C);
     color: #FFFD8C;
 }
+/* title video section */
+
 .divTrailer{
-    width: 60%;
-    height: 60%;
+    width: 100%;
+    height: 100%;
 }
+/* Style div video section */
+
+/* Style  Destac video section */
 .vidDestac{
     width: 100%;
     height: 100%;
 }
+/* Style  Destac video section */
+
+/* Style  Div img section */
 .divImg{
-    width: 20%;
+    width: 25%;
 }
+/* Style  Div img section */
+
+/* Style  img lord of Fallen section */
 .imglof{
     /* margin-left: -10px; */
     width: 100%;
-    height: 78%;
-    /* height: 70%; */
+    height: 100%;
 }
-.imgDitail{
-    width: 100%;
-    height: 50%;
+/* Style  img lord of Fallen section */
+
+.col-8{
+    width: 70%;
 }
+/* ------------------------end categories video section------------------------- */
 
+/* ------------------------star categories video Section details------------------------- */
 
+/* Style card */
+.card{
+    background-color: #15011f;
+    border: 3px solid #15011f;
+}
+/* Style card */
+
+/* Style card tex */
+.card-text{
+    color: var(--cuarto);
+}
+/* Style card tex */
+
+/* Style card span tex */
+.spanDetail{
+    background-color: #15011f;
+    color: var(--cuarto);
+
+}
+/* Style card span tex */
+
+/* Style card Buy Button  */
+.btn{
+    background-color: transparent;
+    border: 3px solid var(--cuarto);
+    color: var(--cuarto);
+    border-radius: 1.5rem;
+}
+/* Style card Buy Button */
+
+/* Style car Buy Button hover*/
+.btn:hover{
+    background-color: var(--cuarto);
+    border: 3px solid var(--cuarto); 
+    box-shadow: 10px 10px 66px 0px var(--cuarto);
+    border-radius: 1.5rem;
+    font-weight: 800;
+}
+/* Style Buy Button hover*/
+
+/* style h1 categories section */
+.h1categories{
+    color:var(--cuarto);
+    font-weight: 600;
+}
+/* style h1 categories section */
+/* style h1 categories section hover*/
+.h1categories:hover{
+    color:var(--cuarto)
+}
+/* style h1 categories section hover*/
+
+/* style conteiner categorias */
+#contCategories{
+    padding: 0.3rem;
+    filter: drop-shadow(5px 5px 17px #FFFD8C);
+    background-color: transparent;
+    border: 3px solid var(--cuarto)
+}
+/* style conteiner categorias */
 
 

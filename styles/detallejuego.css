@@ -1,0 +1,56 @@
+/* Se quitan todos los valores por defecto */
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+/* Se quitan todos los valores por defecto */
+
+/* Se crean variables para la paleta de colores */
+html{
+    --primero:  #793FDF;
+    --segundo: #97FFF4;
+    --tercero: #7091F5;
+    --cuarto: #FFFD8C;
+}
+/* Se crean variables para la paleta de colores */
+
+/* Se pinta el body */
+body{
+    background-color: #15011f;
+
+}
+/* Se pinta el body */
+
+/* ------------------------star recommended video section------------------------- */
+
+.h3Title{
+    filter: drop-shadow(5px 5px 17px #FFFD8C);
+    color: #FFFD8C;
+}
+.divTrailer{
+    width: 60%;
+    height: 60%;
+}
+.vidDestac{
+    width: 100%;
+    height: 100%;
+}
+.divImg{
+    width: 20%;
+}
+.imglof{
+    /* margin-left: -10px; */
+    width: 100%;
+    height: 78%;
+    /* height: 70%; */
+}
+.imgDitail{
+    width: 100%;
+    height: 50%;
+}
+
+
+
+

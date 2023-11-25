@@ -88,10 +88,12 @@ body{
 /* Style recommended video hover */
 /* ----------------------------end recommended video section----------------------------- */
 
+/* style more recomended section */
 .moreRecomends{
     color:var(--cuarto)
     
 }
+/* style more recomended section */
 
 /* ----------------------------Star categories section----------------------------------- */
 /* Style img categories section */
@@ -111,21 +113,16 @@ body{
 }
 /* style h1 categories section hover*/
 
-
+/* style conteiner categorias */
 #contCategories{
     padding: 0.3rem;
     filter: drop-shadow(5px 5px 17px #7091F5);
     background-color: var(--tercero);
 }
-#contCategories:hover{
-    
-    
-}
+/* style conteiner categorias */
 
 /* style h3 Slide categories section */
 .h3Slide{
     color: var(--cuarto);
 }
-
-
 /* style h3 Slide categories section */

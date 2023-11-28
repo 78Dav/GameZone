@@ -1,0 +1,69 @@
+/* Se quitan todos los valores por defecto */
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+/* Se quitan todos los valores por defecto */
+
+/* Se crean variables para la paleta de colores */
+html{
+    --primero:  #793FDF;
+    --segundo: #97FFF4;
+    --tercero: #7091F5;
+    --cuarto: #FFFD8C;
+}
+/* Se crean variables para la paleta de colores */
+
+/* Se pinta el body */
+body{
+    background-color: #15011f;
+
+}
+/* Se pinta el body */
+
+/* Style Buy Button */
+.btn{
+    background-color: transparent;
+    border: 3px solid var(--cuarto);
+    color: var(--cuarto);
+    border-radius: 1.5rem;
+}
+/* Style Buy Button */
+
+/* Style Buy Button hover*/
+.btn:hover{
+    background-color: var(--cuarto);
+    border: 3px solid var(--cuarto); 
+    box-shadow: 10px 10px 66px 0px var(--cuarto);
+    border-radius: 1.5rem;
+    font-weight: 800;
+    color:black;
+}
+/* Style Buy Button hover*/
+
+
+.modal-content{
+    background-color: var(--tercero);
+    box-shadow: 10px 10px 66px 0px var(--cuarto);
+    color: var(--cuarto);
+}
+
+
+
+
+
+.h1container{
+    margin-bottom: 3rem;
+    border: 3px solid var(--tercero);
+    background-color: var(--tercero);
+    box-shadow: 10px 10px 66px 0px var(--cuarto);
+    color:var(--cuarto);
+    text-align: center;
+}
+
+.table{
+    border: 3px solid var(--cuarto);
+    color:var(--cuarto);
+}

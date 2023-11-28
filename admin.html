@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="GamerZone" content="segundoProyecto" />
+    <meta name="GameStore" content="Juegos-Gratis-Acción-Rol-Aventura-Deportes" />
+    <link rel="icon" href="./assests/img/gameZoneLogo.jpeg">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/admin.css">
+    <title>GamerZone</title>
+  </head>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="h1container">
+    <h1>
+      Pagina de Administración
+    </h1>
+  </div>
+  
+<!-- container modal -->
+<div class="container">
+  <div class="row">
+    <!-- Button trigger modal -->
+    <div class="col-12">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Cargar Nuevo Juego
+      </button>
+    </div>
+    <!-- Button trigger modal -->
+  </div>
+</div>
+<!-- container modal -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cargar Nuevo Juego</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Modal -->
+        <!-- formulario Modal -->
+        <form onsubmit="form(event)" class="row needs-validation">
+          <div class="mb-3">
+            <label for="inputCodigoUnico" class="form-label text-danger">Código Único</label>
+            <input type="number" class="form-control" id="inputCodigoUnico" required>
+            <div class="valid-feedback">
+              Numeración Valida.
+            </div>
+            <div class="invalid-feedback">
+              Ingresa el código Númerico.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="inputNombre" class="form-label text-danger">Nombre</label>
+            <input type="tex" class="form-control" id="inputNombre" required>
+            <div class="valid-feedback">
+              Nombre ok.
+            </div>
+            <div class="invalid-feedback">
+              Ingresa un nombre válido.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="inputCategoria" class="form-label text-danger">Categoría</label>
+            <input type="tex" class="form-control" id="inputCategoria" required>
+            <div class="valid-feedback">
+              Categoria ok.
+            </div>
+            <div class="invalid-feedback">
+              Ingresa una categoría Válida.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="inputEstado" class="form-label text-danger">Estado</label>
+            <input type="text" class="form-control" id="inputEstado" required>
+            <div class="valid-feedback">
+              Tipo de estado correcto.
+            </div>
+            <div class="invalid-feedback">
+              Ingresa un estado válido.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="inputDescripcion" class="form-label text-danger">Descripción</label>
+            <input type="text" class="form-control" id="inputDescripcion" required>
+            <div class="valid-feedback">
+              Campo de descripcion Correcto.
+            </div>
+            <div class="invalid-feedback">
+              Ingresa un descripcion...
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn w-25">Guardar</button>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+<!-- formulario Modal -->
+<!--........................  end Modal and Form carga de juegos .............................-->
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <tr>
+        <div class="containerTabla">
+          <table class="table mt-4">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">C.U.</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Categoría</th>
+                <th scope="col">Descripción</th>
+                <th scope="col">Acción</th>
+              </tr>
+            </thead>
+            <tbody id="tablaJuegos">
+            </tbody>
+          </table>
+      </tr>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+    <script src="./js/app.js"></script> 
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -7,7 +7,6 @@ const addJuego = (juego) => {
 }
 function form (event) {
     event.preventDefault();
-    
     const codigoUnico = document.getElementById("inputCodigoUnico");
     const nombre = document.getElementById("inputNombre");
     const categoria = document.getElementById("inputCategoria");
@@ -20,7 +19,6 @@ function form (event) {
         estado: estado.value,
         descripcion: descripcion.value,
     });
-
     localStorage.setItem("listaJuegos", JSON.stringify(juegos));
     cargarLS();
     codigoUnico.value = "";
@@ -53,7 +51,7 @@ const listaJuegos = localStorage.getItem("listaJuegos");
             <td>${element.codigoUnico}</td>
             <td>${element.nombre}</td>
             <td>${element.categoria}</td>
-            <td>${element.estado}</td>
+            <td>${element.estado}<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
             <td>${element.descripcion}</td>
             <td><button type="button" class="btn btn-success" onclick="deleteJuego(${index})">Eliminar</button></td>
         </tr>

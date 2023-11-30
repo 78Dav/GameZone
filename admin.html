@@ -18,7 +18,7 @@
   <br>
   <div class="h1container">
     <h1>
-      Pagina de Administración
+      Administración de Juegos
     </h1>
   </div>
   
@@ -48,7 +48,7 @@
         <!-- formulario Modal -->
         <form onsubmit="form(event)" class="row needs-validation">
           <div class="mb-3">
-            <label for="inputCodigoUnico" class="form-label text-danger">Código Único</label>
+            <label for="inputCodigoUnico" class="form-label">Código Único</label>
             <input type="number" class="form-control" id="inputCodigoUnico" required>
             <div class="valid-feedback">
               Numeración Valida.
@@ -58,7 +58,7 @@
             </div>
           </div>
           <div class="mb-3">
-            <label for="inputNombre" class="form-label text-danger">Nombre</label>
+            <label for="inputNombre" class="form-label">Nombre</label>
             <input type="tex" class="form-control" id="inputNombre" required>
             <div class="valid-feedback">
               Nombre ok.
@@ -68,7 +68,7 @@
             </div>
           </div>
           <div class="mb-3">
-            <label for="inputCategoria" class="form-label text-danger">Categoría</label>
+            <label for="inputCategoria" class="form-label">Categoría</label>
             <input type="tex" class="form-control" id="inputCategoria" required>
             <div class="valid-feedback">
               Categoria ok.
@@ -78,7 +78,7 @@
             </div>
           </div>
           <div class="mb-3">
-            <label for="inputEstado" class="form-label text-danger">Estado</label>
+            <label for="inputEstado" class="form-label">Estado</label>
             <input type="text" class="form-control" id="inputEstado" required>
             <div class="valid-feedback">
               Tipo de estado correcto.
@@ -88,7 +88,7 @@
             </div>
           </div>
           <div class="mb-3">
-            <label for="inputDescripcion" class="form-label text-danger">Descripción</label>
+            <label for="inputDescripcion" class="form-label">Descripción</label>
             <input type="text" class="form-control" id="inputDescripcion" required>
             <div class="valid-feedback">
               Campo de descripcion Correcto.
@@ -111,14 +111,14 @@
     <div class="col-12">
       <tr>
         <div class="containerTabla">
-          <table class="table mt-4">
+          <table class="table mt-1">
             <thead>
               <tr>
                 <th scope="col">#</th>
                 <th scope="col">C.U.</th>
                 <th scope="col">Nombre</th>
-                <th scope="col">Estado</th>
                 <th scope="col">Categoría</th>
+                <th scope="col">Estado</th>
                 <th scope="col">Descripción</th>
                 <th scope="col">Acción</th>
               </tr>
@@ -132,8 +132,43 @@
     </div>
   </div>
 </div>
-
-
+<!------------------------------------- administracion de usuarios --------------------------------->
+<br>
+<br>
+<br>
+<div class="h1container">
+  <h1>
+    Administración de Usuarios
+  </h1>
+</div>
+<!------------------------------------- administracion de usuarios --------------------------------->
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <tr>
+        <div class="containerTabla">
+          <table class="table mt-1">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Apellido y Nombre</th>
+                <th scope="col">Edad</th>
+                <th scope="col">País</th>
+                <th scope="col">Nick Name</th>
+                <th scope="col">E-mail</th>
+                <th scope="col">Contraseña</th>
+                <th scope="col">Acción</th>
+              </tr>
+            </thead>
+            <tbody id="tablaJuegos">
+            </tbody>
+          </table>
+      </tr>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 

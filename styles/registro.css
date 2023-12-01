@@ -23,6 +23,28 @@ body{
 }
 /* Se pinta el body */
 
+/* ------------------------star recommended video section------------------------- */
+/* Style H1 Registro */
+.h1Registro{
+    color: var(--cuarto);
+}
+/* Style H1 Registro */
+
+/* Style Form conteiner */
+#formcontainer{
+    color: var(--cuarto);
+    
+}
+/* Style Form conteiner */
+
+/* Style div Form */
+#divForm{
+    background-color: transparent;
+    box-shadow: 10px 10px 66px 0px var(--cuarto);
+    padding: 1rem;
+}
+/* Style div Form */
+
 /* Style Buy Button */
 .btn{
     background-color: transparent;
@@ -39,31 +61,6 @@ body{
     box-shadow: 10px 10px 66px 0px var(--cuarto);
     border-radius: 1.5rem;
     font-weight: 800;
-    color:black;
+    color: black;
 }
 /* Style Buy Button hover*/
-
-/* Style modal content*/
-.modal-content{
-    background-color: var(--tercero);
-    box-shadow: 10px 10px 66px 0px var(--cuarto);
-    color: var(--cuarto);
-}
-/* Style modal content*/
-
-/* Style h1 container*/
-.h1container{
-    margin-bottom: 3rem;
-    border: 3px solid nome;
-    box-shadow: 10px 10px 66px 0px var(--cuarto);
-    color:var(--cuarto);
-    text-align: center;
-}
-/* Style h1 container*/
-
-/* Style Table*/
-.table{
-    border: 3px solid var(--cuarto);
-    color:var(--cuarto);
-}
-/* Style table*/

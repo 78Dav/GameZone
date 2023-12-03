@@ -1,0 +1,51 @@
+/* Se quitan todos los valores por defecto */
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+/* Se quitan todos los valores por defecto */
+
+/* Se crean variables para la paleta de colores */
+html{
+    --primero:  #793FDF;
+    --segundo: #97FFF4;
+    --tercero: #7091F5;
+    --cuarto: #FFFD8C;
+}
+/* Se crean variables para la paleta de colores */
+
+/* Se pinta el body */
+body{
+    background-color: #7091F5;
+    
+}
+/* Se pinta el body */
+
+/* ------------------------star recommended video section------------------------- */
+#col1{
+    background-color: var(--cuarto);
+    box-shadow: 10px 10px 66px 0px var(--cuarto);
+    
+}
+/* Style Boton enviar */
+.btn{
+    background-color: #15011f;
+    box-shadow: 10px 10px 66px 0px none;
+    border-radius: 1.5rem;
+    color: var(--cuarto);
+    font-weight: 700;
+}
+/* Style Boton enviar */
+
+/* Style Boton enviar Hover */
+.btn:hover{
+    background-color: var(--cuarto);
+    box-shadow: 10px 10px 66px 0px var(--cuarto);
+    border: 3px solid var(--cuarto);
+    border-radius: 1.5rem;
+    color: black;
+    font-weight: 700;
+}
+/* Style Boton enviar Hover */

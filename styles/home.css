@@ -107,17 +107,12 @@ body{
     color:black
 }
 /* style h1 categories section */
-/* style h1 categories section hover*/
-.h1categories:hover{
-    color:var(--cuarto)
-}
-/* style h1 categories section hover*/
 
 /* style conteiner categorias */
 #contCategories{
     padding: 0.3rem;
-    filter: drop-shadow(5px 5px 17px #7091F5);
-    background-color: var(--tercero);
+    /* filter: drop-shadow(5px 5px 17px #FFFD8C); */
+    background-color: #FFFD8C;
 }
 /* style conteiner categorias */
 

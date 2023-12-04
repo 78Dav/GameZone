@@ -23,7 +23,58 @@ body{
 }
 /* Se pinta el body */
 
-/* ------------------------star recommended video section------------------------- */
+/* ------------------------star Navbar Secction------------------------ */
+#navbarInicio{
+    font-size: 0.8rem;
+    background-color:#15011f;
+    padding-top: 1rem;
+}
+/* Style logo Navbar */
+.logoNav {
+    width: 3rem;
+}
+/* Style logo Navbar */
+
+/* Style Navbar */
+.container-fluid {
+    margin-top: -1.5%;
+    background-color: var(--tercero);
+}
+/* Style Navbar */
+
+/* Style Button Buscar */
+.anclaBuscar {
+    text-decoration: none;
+    color: var(--cuarto);
+}
+/* Style Button Buscar */
+
+/* Style Button Buscar hover */
+.anclaBuscar:hover {
+    text-decoration: none;
+    color: black;
+}
+/* Style Button Buscar hover*/
+
+/* Style Dropdown Menu */
+.dropdown-menu {
+    background-color: transparent;
+    color: var(--cuarto);
+}
+/* Style Dropdown Menu */
+
+/* Style Dropdown Menu item */
+.dropdown-item {
+    background-color: transparent;
+    color: var(--cuarto);
+}
+/* Style Dropdown Menu item*/
+.nav-link{
+color: var(--cuarto);
+}
+/* ------------------------End Navbar Secction------------------------ */
+
+/* ------------------------Star Recommended Video Secction--------------------
 /* Style div video Description  */
 #divDesc{
     border: 3px solid var(--cuarto);
@@ -120,4 +171,69 @@ body{
 .h3Slide{
     color: var(--cuarto);
 }
-/* style h3 Slide categories section */
+ /* style h3 Slide categories section */
+  
+ /* FOOTER */
+
+ #footer{
+    background-color: transparent;
+  }
+  
+  .logo-footer {
+    width: 200px;
+    height: auto;
+  }
+  
+  .social-media {
+    color: var(--cuarto);
+    font-size: 40px;
+  }
+  
+  .social-media:hover {
+    color: var(--cuarto);
+    transition: all 0.1s linear;
+    font-size: 50px;
+  }
+  
+  .about-footer a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--cuarto);
+  }
+  
+  .about-footer a:hover {
+    color: var(--cuarto);
+    transition: all 0.1s linear;
+    font-size: 35px;
+  }
+  .copiRight{
+    color: var(--cuarto)
+  }
+
+ @media (min-width: 576) {
+    .col-4 {
+      .iconRep {
+        font-size: 1rem;
+      }
+    }
+    .col-4:hover {
+      .iconRep {
+        font-size: 1rem;
+      }
+    }
+  }
+  @media (min-width: 576) and (max-width: 992px) {
+    .col-4 {
+      .iconRep {
+        font-size: 1rem;
+      }
+    }
+    .col-4:hover {
+      .iconRep {
+        font-size: 1rem;
+      }
+    }
+  }
+  @media (min-width: 1366) and (max-width: 1978px) {
+  }

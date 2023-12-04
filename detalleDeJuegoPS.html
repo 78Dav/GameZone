@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="GamerZone" content="segundoProyecto" />
     <meta name="GameStore" content="Juegos-Gratis-Acción-Rol-Aventura-Deportes" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
     <link rel="icon" href="./assests/img/gameZoneLogo.jpeg">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -13,11 +14,50 @@
     <title>GamerZone</title>
   </head>
   <body>
-  <br>
-  <br>
-  <br>
-  <br>
+ <!----------------------------- Star Navbar inicio de Sesion --------------------------------->
+<nav class="navbar" id="navbarInicio">
+  <form class="container-fluid justify-content-end">
+    <a class="nav-link active" aria-current="page" href="./home.html">Iniciar Sesión</a>
+    <a class="nav-link active" aria-current="page" href="./registro.html">Registrarse</a>
+  </form>
+</nav>
+<!------------------------------- Star Navbar inicio de Sesion --------------------------------->
+
+<!-- ----------------------------------  Star Navbar secction ---------------------------------->
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand ms-2" href="./home.html"><img src="./assests/img/gameZoneLogo.jpeg" alt="logo" class="logoNav" /></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="bi bi-arrow-down-square" id="buttonNav"></i></span>
+    </button>
+    <form class="d-flex w-50">
+      <input class="form-control me-2 ms-5" type="search" placeholder="Buscar" aria-label="Search" />
+      <button class="btn btn-outline-primary ms-5" type="submit"><a href="./404.html" class="anclaBuscar">Buscar</a></button>
+    </form>
+    <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./home.html">Inicio</a>
+        </li>
+        <li class="nav-item dropdown ms-5"></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Categorías </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="./home.html">Acción</a></li>
+            <li><a class="dropdown-item" href="./home.html">Estrategia</a></li>
+            <li><a class="dropdown-item" href="./home.html">Aventura</a></li>
+            <li><a class="dropdown-item" href="./home.html">Rol</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!---------------------------------------  End Navbar secction -------------------------------------->
   <!-- --------------------------Star title and video section--------------------------- -->
+  <br>
+  <br>
+  <br>
   <div class="container">
     <div class="row">
       <div class="col-7">
@@ -151,30 +191,31 @@
         <a href="./404.html"><h6 class="briefDescription text-center"><button type="button" class="btn mt-4">Comprar Ahora</button></h6></a>
       </div>
     </div>
-    <!-------------------------------------------- Star details section  -------------------------------------------->
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<!-------------------------------------------- Star details section  -------------------------------------------->
+<!-------------------------------------------- Star footer section  -------------------------------------------->
+ <footer class="text-white mt-5" id="footer">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-12 col-md-4"><img class="logo-footer mt-4" src="./assests/img/gameZoneLogo.jpeg" alt="logo color" /></div>
+      <div class="col-12 col-md-4">
+        <nav class="d-flex justify-content-evenly mt-4">
+          <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram social-media"></i></a>
+          <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook social-media"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter social-media"></i></a>
+          <a href="https://youtube.com" target="_blank"><i class="bi bi-youtube social-media"></i></a>
+        </nav>
+  </div>
+  <div class="col-12 col-md-4 mt-4">
+    <div class="d-flex flex-column about-footer">
+      <a href="./contacto.html">Contacto</a>
+      <a class="mt-3" href="./nosotros.html">Acerca de nosotros</a>
+    </div>
+  </div>
+</div>
+<small class="copiRight">&copy; 2023 RollingCode School. Todos los derechos reservados. GamerZone se usa bajo licencia.</small>
+</div>
+</footer> 
+<!-------------------------------------------- Star footer section  -------------------------------------------->
     <script src="./js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>

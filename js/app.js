@@ -19,12 +19,14 @@ function modal (event) {
     const categoria = document.getElementById("inputCategoria");
     const estado = document.getElementById("inputEstado");
     const descripcion = document.getElementById("inputDescripcion");
+    const favorito = document.getElementById("inputFavorito");
     addJuego({
         codigoUnico: codigoUnico.value,
         nombre: nombre.value,
         categoria: categoria.value,
         estado: estado.value,
         descripcion: descripcion.value,
+        favorito: favorito.value,
     });
     localStorage.setItem("listaJuegos", JSON.stringify(juegos));
     cargarLS();
@@ -33,6 +35,7 @@ function modal (event) {
     estado.value = "";
     categoria.value = "";
     descripcion.value = "";
+    favorito.value = "";
 }
 function deleteJuego(index) {
     juegos.splice(index, 1);
@@ -59,6 +62,7 @@ const listaJuegos = localStorage.getItem("listaJuegos");
             <td>${element.categoria}</td>
             <td>${element.estado}</td>
             <td>${element.descripcion}</td>
+            <td>${element.favorito}</td>
             <td><button type="button" class="btn" onclick="deleteJuego(${index})">Eliminar</button></td>
         </tr>
         `
@@ -69,13 +73,3 @@ const listaJuegos = localStorage.getItem("listaJuegos");
     cargarLS()
     console.warn("Funcionando bien hasta aca papilo");
 
-
-
-
-
-
-
-
-    
-
-    

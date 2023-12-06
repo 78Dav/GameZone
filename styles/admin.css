@@ -300,3 +300,22 @@ background: linear-gradient(to right, #15011f, #793FDF, #15011f);
   margin: 5px;
 }
 }
+
+@media (max-width: 450px){
+.container{
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  height: 20%;
+  font-size: 60%;
+}
+}
+
+
+/* estrella*/
+
+.favorito {
+  color: yellow; /* Cambia este valor al color amarillo que desees */
+}
+
+

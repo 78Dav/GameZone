@@ -1,3 +1,10 @@
+window.addEventListener("load",()=>{
+    document.querySelector(".menuBtn").addEventListener("click", () => {
+        document.querySelector(".navMenu").classList.toggle("show");
+    });
+});
+
+
 console.log("funcionando");
 
 let juegos = []
@@ -68,5 +75,7 @@ const listaJuegos = localStorage.getItem("listaJuegos");
 
 
 
+
+    
 
     

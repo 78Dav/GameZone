@@ -18,17 +18,14 @@ html{
 
 /* Se pinta el body */
 body{
-    background-color: #7091F5;
+    background: #15011f;
+background: linear-gradient(to right, #15011f, #793FDF, #15011f);
     
 }
 /* Se pinta el body */
 
 /* ------------------------star recommended video section------------------------- */
-#col1{
-    background-color: var(--cuarto);
-    box-shadow: 10px 10px 66px 0px var(--cuarto);
-    
-}
+
 /* Style Boton enviar */
 .btn{
     background-color: #15011f;
@@ -41,7 +38,6 @@ body{
 
 /* Style Boton enviar Hover */
 .btn:hover{
-    background-color: var(--cuarto);
     box-shadow: 10px 10px 66px 0px var(--cuarto);
     border: 3px solid var(--cuarto);
     border-radius: 1.5rem;
@@ -49,3 +45,8 @@ body{
     font-weight: 700;
 }
 /* Style Boton enviar Hover */
+
+#col3 {
+    width: 50%;
+    margin: 0 auto;
+}

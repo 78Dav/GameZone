@@ -4,14 +4,16 @@ body {
   font-family: "Raleway", sans-serif;
   font-family: "REM", sans-serif;
 
-  background-color: #15011f;
+
+    background: #15011f;
+    background: linear-gradient(to right, #15011f, #793FDF, #15011f);
 }
 
 .targeta {
   background-color: #15011f;
 }
 .card {
-  background-color: #7091F5;
+  background-color: #3d5499;
   -webkit-box-shadow: inset 0px -129px 73px -105px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: inset 0px -129px 73px -105px rgba(0, 0, 0, 0.75);
   box-shadow: inset 0px -129px 73px -105px rgba(0, 0, 0, 0.75);
@@ -78,16 +80,15 @@ p {
   width: 1000px;
 }
 .btn {
-  background-color: #7091F5;
-  
+  background-color: #3d5499;
 }
 .btn:hover {
   background-color: #FFFD8C;
-  box-shadow: 10px 10px 66px 0px #FFFD8C;
+  
 }
 
 .accordion-collapse {
-  background-color: #3a9188;
+  background-color: #3d5499;
 }
 .collapse {
   background-color: #062925;
@@ -107,4 +108,10 @@ font-weight: 900;
 }
 #InicioText:hover{
   color: black;
+  }
+
+
+  .icon{
+    display: flex;
+    justify-content: center;
   }

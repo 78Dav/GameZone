@@ -10,7 +10,7 @@ if(email == "estebdav_78@gmail.com" && pass == "26446234")
    
     window.location = "home.html";
 
-    alert("Bienvenido a GameZone");
+    alert("Bienvenido a GameZone, te Logueaste como administrador");
 
 
 }

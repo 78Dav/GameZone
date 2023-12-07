@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="GamerZone" content="segundoProyecto" />
@@ -15,10 +14,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>GamerZone</title>
   </head>
-  <!----------------------------- Star Navbar inicio de Sesion --------------------------------->
+  <!---Star Navbar inicio de Sesion ---->
   <div class="menuBtn">
     <i class="fa-solid fa-bars fa-2x"></i>
-</div>
+  </div>
 
 <div class="navContainer">
     <nav class="navMain">
@@ -36,14 +35,14 @@
     </nav>
 </div>
   </nav>
-<!---------------------------------------  End Navbar secction -------------------------------------->
+<!---  End Navbar --->
 <br>  
 <br>  
 <br>  
 <div class="h1container">
-    <h1>
+    <h2>
       Administración de Juegos
-    </h1>
+    </h2>
   </div>
   
 <!-- container modal -->
@@ -52,7 +51,7 @@
     <!-- Button trigger modal -->
     <div class="col-10">
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        <div class="fs-6">Cargar Nuevo Juego</div> 
+        <div class="btnSize">Cargar Nuevo Juego</div> 
       </button>
     </div>
     <!-- Button trigger modal -->
@@ -71,6 +70,7 @@
         <!-- Modal -->
         <!-- formulario Modal -->
         <form onsubmit="modal(event)" class="row needs-validation">
+          <input type="hidden" id="editIndex">
           <div class="mb-3">
             <label for="inputCodigoUnico" class="form-label">Código Único</label>
             <input type="number" class="form-control" id="inputCodigoUnico" required>
@@ -144,7 +144,7 @@
     <div class="col-12">
       <tr>
         <div class="containerTabla">
-          <table class="table mt-1">
+          <table class="table">
             <thead>
               <tr>
                 <th scope="col">#</th>
@@ -174,9 +174,9 @@
 <br>
 <br>
 <div class="h1container">
-  <h1>
+  <h2>
     Administración de Usuarios
-  </h1>
+  </h2>
 </div>
 <!------------------------------------- administracion de usuarios --------------------------------->
 <div class="container">

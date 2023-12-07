@@ -104,7 +104,7 @@ padding: 2px;
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: black; /* Cambia el color de fondo según tus preferencias */
+  background-color: rgb(15, 15, 139); 
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   padding: 10px;
   z-index: 2;

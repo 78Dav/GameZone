@@ -1,6 +1,11 @@
-window.addEventListener("load",()=>{
+window.addEventListener("load", () => {
     document.querySelector(".menuBtn").addEventListener("click", () => {
         document.querySelector(".navMenu").classList.toggle("show");
+    });
+
+    // Agregar evento para el menú desplegable de Categorias
+    document.querySelector(".dropdown").addEventListener("click", () => {
+        document.querySelector(".dropdown-content").classList.toggle("show");
     });
 });
 

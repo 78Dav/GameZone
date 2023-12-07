@@ -1,0 +1,66 @@
+/* Se quitan todos los valores por defecto */
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+/* Se quitan todos los valores por defecto */
+
+/* Se crean variables para la paleta de colores */
+html{
+    --primero:  #793FDF;
+    --segundo: #97FFF4;
+    --tercero: #7091F5;
+    --cuarto: #FFFD8C;
+}
+/* Se crean variables para la paleta de colores */
+
+/* Se pinta el body */
+body{
+    background-color: #15011f;
+
+}
+/* Se pinta el body */
+
+/* ------------------------star recommended video section------------------------- */
+/* Style H1 Registro */
+.h1Registro{
+    color: var(--cuarto);
+}
+/* Style H1 Registro */
+
+/* Style Form conteiner */
+#formcontainer{
+    color: var(--cuarto);
+    
+}
+/* Style Form conteiner */
+
+/* Style div Form */
+#divForm{
+    background-color: transparent;
+    box-shadow: 10px 10px 66px 0px var(--cuarto);
+    padding: 1rem;
+}
+/* Style div Form */
+
+/* Style Buy Button */
+.btn{
+    background-color: transparent;
+    border: 3px solid var(--cuarto);
+    color: var(--cuarto);
+    border-radius: 1.5rem;
+}
+/* Style Buy Button */
+
+/* Style Buy Button hover*/
+.btn:hover{
+    background-color: var(--cuarto);
+    border: 3px solid var(--cuarto); 
+    box-shadow: 10px 10px 66px 0px var(--cuarto);
+    border-radius: 1.5rem;
+    font-weight: 800;
+    color: black;
+}
+/* Style Buy Button hover*/

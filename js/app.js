@@ -32,16 +32,16 @@ function login() {
     if (isAdmin) {
         localStorage.setItem("isAdmin", "true");
     }
-    window.location.reload(); // Recargar la página después del inicio de sesión
+    window.location.reload(); 
 }
 
 function logout() {
     localStorage.removeItem("isLoggedIn");
     localStorage.removeItem("isAdmin");
-    window.location.reload(); // Recargar la página después del cierre de sesión
+    window.location.reload(); 
 }
 
-// Resto de tu código...
+
 
 
 let juegos = []

@@ -1,24 +1,16 @@
-/* Se quitan todos los valores por defecto */
 *{
   margin: 0;
   padding: 0;
   border: none;
   box-sizing: border-box;
 }
-/* Se quitan todos los valores por defecto */
-
-/* Se crean variables para la paleta de colores */
 html{
   --primero:  #793FDF;
   --segundo: #97FFF4;
   --tercero: #7091F5;
   --cuarto: #FFFD8C;
 }
-/* Se crean variables para la paleta de colores */
 
-/* Se pinta el body */
-
-/* Se pinta el body */
 
 /* ------------------------star Navbar Secction------------------------ */
 :root {
@@ -180,9 +172,6 @@ padding: 2px;
 }
 }
 
-#adminNavItem1 {
-  display: none;
-}
 
 /* ------------------------End Navbar Secction------------------------ */
 

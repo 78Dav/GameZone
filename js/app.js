@@ -10,18 +10,39 @@ window.addEventListener("load", () => {
 
 document.addEventListener("DOMContentLoaded", function () {
     const adminNavItem = document.getElementById("adminNavItem");
+    const logoutBtn = document.getElementById("logoutBtn");
 
-    // Supongamos que "isAdmin" es una variable que indica si el usuario es administrador
-    const isAdmin = true; // Cambia esto según la lógica de tu aplicación
+    const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
+    const isAdmin = localStorage.getItem("isAdmin") === "true";
 
-    if (isAdmin) {
-        adminNavItem1.style.display = "block";
+    if (isLoggedIn) {
+        if (isAdmin) {
+            adminNavItem.style.display = "block";
+            logoutBtn.style.display = "block";
+        }
     } else {
-        adminNavItem1.style.display = "none";
+        adminNavItem.style.display = "none";
+        logoutBtn.style.display = "none";
     }
 });
 
-console.log("funcionando");
+function login() {
+    localStorage.setItem("isLoggedIn", "true");
+    const isAdmin = prompt("¿Eres administrador? (sí/no)").toLowerCase() === "sí";
+    if (isAdmin) {
+        localStorage.setItem("isAdmin", "true");
+    }
+    window.location.reload(); // Recargar la página después del inicio de sesión
+}
+
+function logout() {
+    localStorage.removeItem("isLoggedIn");
+    localStorage.removeItem("isAdmin");
+    window.location.reload(); // Recargar la página después del cierre de sesión
+}
+
+// Resto de tu código...
+
 
 let juegos = []
 

@@ -15,142 +15,162 @@ html{
 
 /*star Navbar */
 :root {
---color-white: #ffffff;
-}
-
-body {
-background: #15011f;
-background: linear-gradient(to right, #15011f, #793FDF, #15011f);
-color: var(--color-white);
-}
-
-ul {
-list-style: none;
-}
-
-a {
-color: var(--color-white);
-text-decoration: none;
-}
-
-.menuBtn {
-cursor: pointer;
-position: absolute;
-top: 15px;
-right: 20px;
-z-index: 2px;
-display: none;
-}
-
-.navContainer {
-background: #15011f;
-background: linear-gradient(to right, #15011f, #793FDF, #15011f);
-color: var(--color-white);
-position: fixed;
-margin: auto;
-width: 100%;
-z-index: 1;
-}
-
-.navMain {
-align-items: center;
-display: flex;
-font-size: 17px;
-height: 60px;
-justify-content: space-between;
-padding: 20px 0;
-}
-
-.navLogo{
-width: 60px;
-opacity: 0.9;
-}
-
-.navMain ul {
-display: flex;
-}
-
-.navMain ul li {
-padding: 10px;
-}
-
-.navMain ul li a {
-padding: 2px;
-}
-
-.navMain ul li a:hover {
-border-bottom: 2px solid var(--color-white);
-}
-
-.navSearch input {
-margin-left: -10%;
-border-radius: 2px;
-padding: 2px;
-}
-
-/*media queries*/
-
-@media (max-width: 992px) {
-
-.menuBtn {
-  z-index: 2;
-    display: block;
+  --color-white: #ffffff;
+  }
   
-}
-
-.body {
-  background: #15011f
-}
-
-
-.navMain ul.navMenu {
-    background: black;
-    display:inline-table;
-    height: 100px;
-    left: 0;
-    padding: 20px;
-    position: absolute;
-    top: 0;
-    transform: translate(-400px);
-    transition: transform 0.8s ease-in-out;
-    z-index: 2;
-}
-
-.navMain ul.navMenu li {
-  background: black;
-  font-size: 20px;  
-  z-index: 2;
-}
-
-.navLogo {
-    opacity: 0;
-}
-
-
-.navMain form.navSearch {
-    margin-right: 35%;
-}
-
-.navMain ul.navMenu.show{
-    transform: translate(-10px);
-
-}
-
-
-}
-
-@media (max-width: 576px) {
-.navSearch {
-    opacity: 0;
-}
-
-
-.navContainer {
-  margin:auto;
-  width: 0%; 
+  body {
+  background: #15011f;
+  background: linear-gradient(to right, #15011f, #793FDF, #15011f);
+  color: var(--color-white);
+  }
+  
+  ul {
+  list-style: none;
+  }
+  
+  a {
+  color: var(--color-white);
+  text-decoration: none;
+  }
+  
+  .menuBtn {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 2px;
+  display: none;
+  }
+  
+  .navContainer {
+  background: #15011f;
+  background: linear-gradient(to right, #15011f, #793FDF, #15011f);
+  color: var(--color-white);
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
   z-index: 1;
-}
-}
+  }
+  
+  .navMain {
+  align-items: center;
+  display: flex;
+  font-size: 17px;
+  height: 60px;
+  justify-content: space-between;
+  padding: 20px 0;
+  }
+  
+  .navLogo{
+  width: 60px;
+  opacity: 0.9;
+  }
+  
+  .navMain ul {
+  display: flex;
+  }
+  
+  .navMain ul li {
+  padding: 10px;
+  }
+  
+  .navMain ul li a {
+  padding: 2px;
+  }
+  
+  .navMain ul li a:hover {
+  border-bottom: 2px solid var(--color-white);
+  }
+  
+  .navSearch input {
+  margin-left: -20%;
+  border-radius: 2px;
+  padding: 2px;
+  }
+  
+  .navMain ul.navMenu .dropdown {
+    position: relative;
+  }
+  
+  .navMain ul.navMenu .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(15, 15, 139); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 2;
+  }
+  
+  .navMain ul.navMenu .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  
+  /*media queries*/
+  
+  @media (max-width: 992px) {
+  
+  .menuBtn {
+    z-index: 2;
+      display: block;
+    
+  }
+  
+  .body {
+    background: #15011f
+  }
+  
+  
+  .navMain ul.navMenu {
+      background: black;
+      display:inline-table;
+      height: 100px;
+      left: 0;
+      padding: 20px;
+      position: absolute;
+      top: 0;
+      transform: translate(-400px);
+      transition: transform 0.8s ease-in-out;
+      z-index: 2;
+  }
+  
+  .navMain ul.navMenu li {
+    background: black;
+    font-size: 20px;  
+    z-index: 2;
+  }
+  
+  .navLogo {
+      opacity: 0;
+  }
+  
+  
+  .navMain form.navSearch {
+      margin-right: 35%;
+  }
+  
+  .navMain ul.navMenu.show{
+      transform: translate(-10px);
+  
+  }
+  
+  
+  }
+  
+  @media (max-width: 576px) {
+  .navSearch {
+      opacity: 0;
+  }
+  
+  
+  .navContainer {
+    margin:auto;
+    width: 0%; 
+    z-index: 1;
+  }
+  }
 /* End Navbar */
 
 /* Style Buy Button */
@@ -341,11 +361,4 @@ border-radius: 1.3rem;
   color: var(--cuarto);
   border-radius: 1.1rem;
   }
-
-
   }
-
-
-
-
-

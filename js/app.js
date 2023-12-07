@@ -8,6 +8,18 @@ window.addEventListener("load", () => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const adminNavItem = document.getElementById("adminNavItem");
+
+    // Supongamos que "isAdmin" es una variable que indica si el usuario es administrador
+    const isAdmin = true; // Cambia esto según la lógica de tu aplicación
+
+    if (isAdmin) {
+        adminNavItem1.style.display = "block";
+    } else {
+        adminNavItem1.style.display = "none";
+    }
+});
 
 console.log("funcionando");
 
@@ -159,3 +171,6 @@ const listaJuegos = localStorage.getItem("listaJuegos");
         const modalInstance = bootstrap.Modal.getInstance(modalElement);
         modalInstance.hide();
     }
+
+
+    

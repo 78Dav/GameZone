@@ -180,6 +180,10 @@ padding: 2px;
 }
 }
 
+#adminNavItem1 {
+  display: none;
+}
+
 /* ------------------------End Navbar Secction------------------------ */
 
 /* ------------------------Star Recommended Video Secction--------------------

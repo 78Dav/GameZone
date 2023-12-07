@@ -73,7 +73,7 @@ const listaJuegos = localStorage.getItem("listaJuegos");
             <td>${element.codigoUnico}</td>
             <td>${element.nombre}</td>
             <td>${element.categoria}</td>
-            <td>${element.estado}<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+            <td>${element.estado}<input class="form-check-input" type="checkbox" value="" id="checkEstado${index}" ${element.estado.toLowerCase() === 'publicado' ? 'checked' : ''} onclick="toggleEstado(${index})">
             <td>${element.descripcion}</td>
             <td>${element.favorito}</td>
             <td><button type="button" class="btn btn-editar" onclick="editarJuego(${index})" data-bs-toggle="modal" data-bs-target="#exampleModal">Editar</button></td>

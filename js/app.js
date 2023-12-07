@@ -12,7 +12,7 @@ let juegos = []
 const addJuego = (juego) => {
     juegos.push(juego);
 }
-function modal (event) {
+function modal(event) {
     event.preventDefault();
     const codigoUnico = document.getElementById("inputCodigoUnico");
     const nombre = document.getElementById("inputNombre");
@@ -20,16 +20,23 @@ function modal (event) {
     const estado = document.getElementById("inputEstado");
     const descripcion = document.getElementById("inputDescripcion");
     const favorito = document.getElementById("inputFavorito");
+
+    // Agregar una estrella si el juego es favorito
+    const favoritoIcon = favorito.value.toLowerCase() === 'si' ? '<i class="fas fa-star"></i>' : '';
+
     addJuego({
         codigoUnico: codigoUnico.value,
         nombre: nombre.value,
         categoria: categoria.value,
         estado: estado.value,
         descripcion: descripcion.value,
-        favorito: favorito.value,
+        favorito: `${favorito.value} ${favoritoIcon}`, // Incluir la estrella en la columna "Favorito"
     });
+
     localStorage.setItem("listaJuegos", JSON.stringify(juegos));
     cargarLS();
+
+    // Limpiar los campos del formulario
     codigoUnico.value = "";
     nombre.value = "";
     estado.value = "";
@@ -37,6 +44,8 @@ function modal (event) {
     descripcion.value = "";
     favorito.value = "";
 }
+
+
 function deleteJuego(index) {
     juegos.splice(index, 1);
     localStorage.setItem("listaJuegos", JSON.stringify(juegos));
@@ -71,5 +80,5 @@ const listaJuegos = localStorage.getItem("listaJuegos");
 
 } 
     cargarLS()
-    console.warn("Funcionando bien hasta aca papilo");
+    console.warn("Funcionando");
 

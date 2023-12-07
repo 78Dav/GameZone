@@ -54,7 +54,7 @@ background: #15011f;
 background: linear-gradient(to right, #15011f, #793FDF, #15011f);
 color: var(--color-white);
 position: fixed;
-margin: auto;
+margin: 0 auto;
 width: 100%;
 z-index: 1;
 }
@@ -90,7 +90,7 @@ border-bottom: 2px solid var(--color-white);
 }
 
 .navSearch input {
-margin-left: -10%;
+margin-left: -20%;
 border-radius: 2px;
 padding: 2px;
 }
